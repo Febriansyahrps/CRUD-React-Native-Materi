@@ -7,10 +7,10 @@
 import { API_URL, Authorization } from 'react-native-dotenv';
 import cacheService from './cache';
 import storage from './storage';
-import { STORAGE_KEY } from './storageKey';
+import { STORAGE_KEY } from './index';
 
 export const config = {
-  baseUrl: API_URL
+  baseUrl: 'http://ec2-3-81-168-96.compute-1.amazonaws.com/'
 };
 
 export const STATUS_CODE = {

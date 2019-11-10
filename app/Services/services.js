@@ -5,11 +5,8 @@ import { get, post, put } from './networking';
 
 // end point
 export const endpoint = {
-  getListUser: async page => get(`/users?page=${page}`),
-  getUserId: async params => get('api/users/v1', params),
-  UpdateUser: async (params, id) => put(`api/users/v1/user/${id}`, params),
-  login: async params => post('api/users/v1/login/user', params),
-  resetPassword: async params => post('api/users/v1/resetPassword', params),
+  login: async params => post('api/login', params),
+  register: async params => post('api/register', params),
   getData: async page => get(`api/materi`, params)
 };
 
